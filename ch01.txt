@@ -3,3 +3,5 @@ reactJS
 원형섭 강사
 
 https://github.com/stepanowon/react_quickstart
+
+메모는 여기에 넣자
