@@ -1,0 +1,52 @@
+SPA Single page Application
+1. URI 경로 -> 화면 : react-router
+2. STate Management -> 앱수준의 상태 관리 기능 : redux
+
+react 는 지속적으로 데이터가 변하는 화면에 대해
+
+15p
+react 는 단방향 데이터 바인딩이다
+
+state -> view -> event -> setState -> ..
+
+p24
+Tanspile
+ - typescript
+ - babel
+   => ES6 -> ES5
+
+
+react developer Tools 깐뒤에
+file url 에 대한 액세스 허용 해주어야함
+
+chrome 개발자도구에서 설정 중
+search in anonymous and content s.... 허용
+
+브레이크 포인트 잡아보자
+
+
+-------------------
+ES2015 ES6
+
+npm install --global babel-cli babel-preset-env (+) babel-preset-stage-2 (이건 spread operation을 사용하기 위해서)
+bablerc??
+보간법
+
+sourcmap 사용하려면 babel 옵션에 --source-maps 넣어줘야함
+
+
+var : hoisting <- 쓰지말것, 특히 함수는 overwrite 된다. 변수는 미리 만들어버린다.
+let 은 block 단위의 scope 제공한다.
+
+** 구조분해할당 destructuring
+
+arrow function expression
+(크롬에서 테스트해보자)
+
+this 
+- 호출 중인 메서드를 보유한 객체
+- 바인딩시점, 메서드, 함수를 호출할때마다 바인딩
+
+lexical this binind 때문에.. global 될 수 있다는점 주의
+
+ㅔ58~
