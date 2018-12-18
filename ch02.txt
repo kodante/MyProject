@@ -28,7 +28,7 @@ p159 속성  props
 부모 -> 자식 로 속성 전달
 자식에서 부모 데이터를 변경하려고 하면 안된다. 변경하지 않는다!
 props 자체는 read only 이나, 가져온 객체의 참조를 통해 변경할 수 있으나.. 그러면 안된다.
-
+* 크롬디버거에서 react 탭에서 변수를 추적할 수 있다.
 
 함수형 클래스는 인자로 받는다
 클래스형은 this.props 로 부모가 보낸 인자를 받는다
@@ -40,3 +40,16 @@ var obj2 = [111, ...ojb, 999 ]
 obj2 === obj false
 
 props 로 객체를 전달하는 것 보다, spread operator 를 통해 각 값을 넘겨서 아예 수정하지 못하도록 한다.
+
+p170 상태
+container component
+presentation 
+
+p171
+상태는 생성자를 통해 만든다.
+상태 변경은 setState() 메서드를 이용해야한다 -> rerender가 안일어난다.
+
+p182
+kebob casing => background-color
+camelCasing => backgroundColor
+
