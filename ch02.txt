@@ -1,0 +1,42 @@
+p138
+snippets 을 사용해서
+rcc rsfc 등등 사용해본다.
+
+p
+
+
+??
+css 에서는 class
+js 에서는 className
+bootstrap.css 의 역할은?
+버전 3.3.7을 사용하는 이유는?
+impor 할때 node_modules 아래부터 해야한다.
+
+p150
+jsx 가 babel 과의 관계는?
+
+p154
+tip : map 설명
+화살표함수
+map 에서 item.no와 index 의 차이?
+
+p157
+<react.Fragment>
+react 16에서부터
+
+p159 속성  props
+부모 -> 자식 로 속성 전달
+자식에서 부모 데이터를 변경하려고 하면 안된다. 변경하지 않는다!
+props 자체는 read only 이나, 가져온 객체의 참조를 통해 변경할 수 있으나.. 그러면 안된다.
+
+
+함수형 클래스는 인자로 받는다
+클래스형은 this.props 로 부모가 보낸 인자를 받는다
+
+p167
+전개연산자 spread operator
+var obj = [1, 2, 3];
+var obj2 = [111, ...ojb, 999 ]
+obj2 === obj false
+
+props 로 객체를 전달하는 것 보다, spread operator 를 통해 각 값을 넘겨서 아예 수정하지 못하도록 한다.
