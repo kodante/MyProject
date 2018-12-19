@@ -1,0 +1,83 @@
+렌더링 최적화..
+
+부를때 listItem.add.bind(this) <- 이거 하지말고 생성자에서 하던가. arrow function 사용
+
+-- 모던 자바스크립트 개발자를 위한 리액트 프로그래밍 <- 사지마
+
+
+고차 컴포넌트
+-- 고차 함수
+
+chrome console 에서
+
+function test() { console.log("hello"); }
+function hoc(f) {
+	f.staticmethod = function() {
+		console.log("world"); }
+	return f;
+var test2 = hoc(test)
+test2()
+ ==> hello
+test2.staticmethos()
+
+
+--> 관심사를 분리하기 위해
+
+
+-------
+
+설계 방법
+
++ 렌더링 최적화 시킬 수 있도록
+
+-----
+
+react performance devtool
+
++ 크롬에서도 개발툴에 있다
+
+
+-------------
+
+fetch 는 브라우저 내장이긴하다.
+하위 호환 polyfill -> whatwg-fetch
+json 이 왔을 때 js 객체로 바꾸려면 직접 해줘야한다.
+중단기능이 없다.
+
+axios
+csrf 공격도 막아준다
+promise 패턴을 사용한다
+es6-promise 라는 polyfill 사용해야 한다
+
+-- 
+테스트 사이트 
+github.com/stepanowon/contactsvc
+cors 주석처리했다
+
+서버거는 내부 테스트 API도 만들어져있다
+sample.bmaster.kro.kr
+
+contactsvc.herokuapp.com <- https 
+
+-- 
+cross domain (origin) 문제
+/ location.origin
+
+netlify <- 무료 - frontend 배포
+heroku <- backend
+mongodb atlas <- 데이터 사이즈 1G 까지 무료
+
+해결방법 : cors (p342)
+
+
+proxy 서버 :  http proxy servlet -> github
+1. apache tomcat 
+    Http Proxy Servlet 검색
+    https://github.com/mitre/HTTP-Proxy-Servlet
+
+2. apache (내장)
+   proxyPass, proxyPassReverse
+
+3. node.js + express
+   http proxy middleware 
+

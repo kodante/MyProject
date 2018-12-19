@@ -6,3 +6,10 @@ css 에서는 class
 js 에서는 className
 bootstrap.css 의 역할은?
 버전 3.3.7을 사용하는 이유는?
+
+
+willUpdate 시 state, prop 둘중에 하나만
+loop 돌면서 컴포넌트가 늘어날 경우
+key 는 이름이 정해진건가
+
+this
