@@ -17,10 +17,31 @@ this
 
 ------------
 
-빌드된 상태에서 상태를 바꿀 수 있을까?
+* 빌드된 상태에서 상태를 바꿀 수 있을까?
 런타임에서
 
 async await 패턴
 promise 패턴 공부
 
 -> 이걸로 react-promise 비동기 쓴다
+
+lodash
+
+전역 상태는 어떻게 관리하나?
+
+* 일부 기능만 예전 html 에 붙이려면 어떻게 하
+
+
+---
+react-native
+nativeScript-Vue
+Ionic + angular --> webview
+flutter : dart (순수 native)
+
+react-electon
+모나코 에디터
+
+
+jwt
+
+----
